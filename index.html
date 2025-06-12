@@ -716,36 +716,43 @@
 
           <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Get A Quote</h5>
-            <form id="contactForm" action="https://formspree.io/f/xnnvdjpk" method="POST">
+            <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLScpF_2xkkXUn_b7_otD9VL-PBoN0oflxHnbJnjfNJPamjHsPg/formResponse" method="POST" target="_blank">
+              <!-- Name Field -->
               <div class="mb-3">
                 <input
                   type="text"
                   class="form-control"
-                  name="name"
+                  name="entry.376475952"
                   placeholder="Your Name"
                   required
                 />
               </div>
+              
+              <!-- Email Field -->
               <div class="mb-3">
                 <input
                   type="email"
                   class="form-control"
-                  name="email"
+                  name="entry.1223988970"
                   placeholder="Your Email"
                   required
                 />
               </div>
+              
+              <!-- Phone Field -->
               <div class="mb-3">
                 <input
                   type="tel"
                   class="form-control"
-                  name="phone"
+                  name="entry.1069303285"
                   placeholder="Your Mobile"
                   required
                 />
               </div>
+              
+              <!-- Service Dropdown -->
               <div class="mb-3">
-                <select class="form-control" name="service" required>
+                <select class="form-control" name="entry.903518807" required>
                   <option value="">Select Service</option>
                   <option value="Car Insurance">Car Insurance</option>
                   <option value="Bike Insurance">Bike Insurance</option>
@@ -754,6 +761,11 @@
                   <option value="Claim Assistance">Claim Assistance</option>
                 </select>
               </div>
+              
+              <!-- Hidden Fields -->
+              <input type="hidden" name="fvv" value="1">
+              <input type="hidden" name="pageHistory" value="0">
+              
               <button type="submit" class="btn btn-primary w-100 py-2">
                 Submit
               </button>

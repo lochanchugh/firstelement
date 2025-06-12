@@ -64,3 +64,20 @@
     
 })(jQuery);
 
+ document.getElementById('contactForm').addEventListener('submit', function(e) {
+   e.preventDefault();
+   var form = e.target;
+   var formData = new FormData(form);
+   
+   fetch(form.action, {
+     method: 'POST',
+     body: formData,
+     mode: 'no-cors'
+   }).then(function() {
+     // Redirect to thank you page or show success message
+     window.location.href = 'thank-you.html'; // Create this page
+   }).catch(function(error) {
+     console.error('Error:', error);
+     alert('There was an error submitting the form. Please try again.');
+   });
+ });
